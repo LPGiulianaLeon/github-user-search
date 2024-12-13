@@ -1,0 +1,144 @@
+.light-mode {
+    background-color: white;
+    color: black;
+  }
+  
+  .dark-mode {
+    background-color: #1e2a47;
+    color: white;
+  }
+
+  .usercard-container.light-mode {
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: black;
+  }
+  
+  .usercard-container.dark-mode {
+    background-color: #1e2a47;
+    color: white;
+  }
+
+  .stats.light-mode {
+    background-color: #dff7f7 ;
+  }
+  
+  .stats.light-mode p {
+    color: black;
+  }
+ 
+  .stats.dark-mode {
+    background-color: #141c2f;
+    color: white;
+  }
+
+.usercard-container {
+    background-color: #1e2a47;
+    border-radius: 10px;
+    padding: 2rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%; 
+   
+    max-width: 535px; 
+    margin: 0 auto; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .top-section {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  
+  
+  .user-image {
+    width: 8rem; 
+    height: 8rem;
+    border-radius: 50%; 
+  }
+  
+  
+  .user-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  
+  .name-and-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .user-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .join-date {
+    color: #a9c3df;
+    font-size: 0.9rem;
+  }
+  
+  
+  .user-bio {
+    color: #a9c3df;
+    font-size: 1rem;
+  }
+  
+  
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    background-color: #141c2f;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .stats p {
+
+    font-size: 1rem;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  
+  .details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .details > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .icon {
+    font-size: 1.2rem;
+    color: #60abff;
+  }
+  
+  .details p {
+    margin: 0;
+    color: #a9c3df;
+  }
+  
+  @media (max-width: 768px) {
+    .usercard-container {
+      padding: 1.5rem;
+    }
+    
+    .details { grid-template-columns: 1fr;
+    }
+   
+  }
