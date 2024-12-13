@@ -83,3 +83,9 @@
         transform: translateX(+240%)
     }
 }
+
+@media (max-width: 490px) {
+    .search-btn{
+        transform: translateX(+170%)
+    }
+}
