@@ -50,6 +50,10 @@ function App() {
       fetchUser(username); 
     }, []);
 
+    useEffect(() => {
+      document.documentElement.className = isLightMode ? "light" : "dark";
+    }, [isLightMode]);
+    
   const fetchUser = async (username: string) => {
     try {
       const response = await fetch(`https://api.github.com/users/${username}`);
@@ -76,11 +80,11 @@ function App() {
         >
           {isLightMode ? (
             <>
-              LIGHT <FiSun className={styles.icon} />
+              DARK <FiMoon className={styles.icon} />
             </>
             ) : (
             <>
-              DARK <FiMoon className={styles.icon} />
+              LIGHT <FiSun className={styles.icon} />
             </>
           )}
         </button>

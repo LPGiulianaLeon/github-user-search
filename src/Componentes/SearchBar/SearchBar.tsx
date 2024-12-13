@@ -30,7 +30,7 @@ export default function SearchBar({ onSearch, isLightMode }: SearchBarProps) {
         type="text"
         name="search-user"
         placeholder="Search GitHub username..."
-        className={`${styles["search-input"]} ${isLightMode ? styles["light-mode"] : styles["dark-mode"]}`}
+        className={`${styles["search-input"]} shared-width ${isLightMode ? styles["light-mode"] : styles["dark-mode"]}`}
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
         onKeyDown={(e) => {

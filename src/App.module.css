@@ -3,11 +3,17 @@
 .light {
     background-color: #dff7f7 ;
     color: #222731;
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
   }
   
   .dark {
     background-color: #141d2f;
     color: white;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
   }
   
   
@@ -34,3 +40,16 @@
     font-size: 1rem;
   }
   
+  .shared-width {
+    width: 100%;
+    max-width: 600px; /* Ancho máximo compartido */
+    margin: 0 auto;  /* Centramos los elementos */
+    padding: 0 1rem; /* Espaciado lateral para pantallas más pequeñas */
+  }
+  
+  /* Estilo adicional para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .shared-width {
+      max-width: 90%; /* Ajusta el ancho en pantallas pequeñas */
+    }
+  }

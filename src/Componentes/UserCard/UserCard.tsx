@@ -10,7 +10,7 @@ interface UserCardProps {
 export default function UserCard({ user, isLightMode }: UserCardProps) {
   return (
     <div 
-    className={`${styles["usercard-container"]} ${
+    className={`${styles["usercard-container"]} shared-width ${
         isLightMode ? styles["light-mode"] : styles["dark-mode"]
     }`}
     >

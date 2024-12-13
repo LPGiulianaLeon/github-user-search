@@ -1,5 +1,13 @@
-body {
+html, body {
+    margin: 0;
+    padding: 0;
     font-family: "Space Mono", monospace;
-    color: white;
-    background-color: #141D2F ;
 }
+
+html.light {
+    background-color: #dff7f7 ;
+  }
+  
+html.dark {
+    background-color: #141c2f;
+  }

@@ -78,11 +78,13 @@
   }
   
   .user-name {
+    display: flex;
     font-size: 1.5rem;
     font-weight: bold;
   }
   
   .join-date {
+    display: flex;
     color: #a9c3df;
     font-size: 0.9rem;
   }
@@ -141,4 +143,8 @@
     .details { grid-template-columns: 1fr;
     }
    
+    .name-and-date {
+        flex-direction: column;
+        
+    }
   }

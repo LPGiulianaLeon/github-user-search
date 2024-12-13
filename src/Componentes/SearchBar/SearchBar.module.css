@@ -49,6 +49,7 @@
     flex-grow: 1;
     padding: 15px 15px 15px 60px;
     color: white;
+
 }
 
 .search-icon {
@@ -75,4 +76,10 @@
     padding: 10px 15px;
     cursor: pointer;
     transform: translateX(+320%);
+}
+
+@media (max-width: 768px) {
+    .search-btn{
+        transform: translateX(+240%)
+    }
 }
